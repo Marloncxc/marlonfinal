@@ -18,20 +18,21 @@ def add_bg_image(image_path):
     bg_image = f"""
     <style>
     .stApp {{
-        background-image: url("data:image/png;base64,{bin_str}");
-        background-size: 500px 400px;
-        background-repeat: no-repeat;
-        background-position: top right;
-        height: 100vh;
-    }}
-    </style>
-    """
-    st.markdown(bg_image, unsafe_allow_html=True)
+      #  background-image: url("data:image/png;base64,{bin_str}");
+      #  background-size: 500px 400px;
+      #  background-repeat: no-repeat;
+      #  background-position: top right;
+      #  height: 100vh;
+  #  }}
+  #  </style>
+  #  """
+  #  st.markdown(bg_image, unsafe_allow_html=True)
 
 # Caminho da imagem de fundo
 add_bg_image("2023-07-06.jpg")
+st.image('2023-07-06.jpg', caption=None, channels="RGB")
 
-st.title('CASA DA RAÇÃO')
+
 
 # Arquivo CSV
 csv_file = 'estoque.csv'
