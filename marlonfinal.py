@@ -161,3 +161,4 @@ if st.sidebar.button('Gerar Relatório'):
         st.dataframe(relatorio_diario)
     else:
         st.warning('Não há movimentações para esta data.')
+
