@@ -103,7 +103,7 @@ else:
         estoque.to_csv(csv_file, index=False)
 
         nova_movimentacao = {
-            'Data': [datetime.now().strftime('%Y-%m-%d')],
+            'Data': [datetime.now().strftime('%d-%m-%Y')],
             'Tipo': ['Entrada'],
             'Produto': [novo_produto],
             'Quantidade': [nova_quantidade]
@@ -132,7 +132,7 @@ else:
                 estoque.to_csv(csv_file, index=False)
 
                 nova_movimentacao_saida = {
-                    'Data': [datetime.now().strftime('%Y-%m-%d')],
+                    'Data': [datetime.now().strftime('%d-%m-%Y')],
                     'Tipo': ['Saída'],
                     'Produto': [produto_saida],
                     'Quantidade': [quantidade_saida]
@@ -188,7 +188,7 @@ else:
     st.sidebar.header('RELATÓRIO DIÁRIO')
 
     # Data no formato dia/mês/ano
-    data_relatorio = st.sidebar.date_input('Selecione uma data', datetime.now())
+    data_relatorio = st.sidebar.date_input('Selecione uma data', datetime.now(),format='DD/MM/YYYY')
     st.sidebar.write(f'Data selecionada: {data_relatorio.strftime("%d/%m/%Y")}')
     
     if st.sidebar.button('Gerar Relatório'):
