@@ -13,11 +13,11 @@ def get_base64(bin_file):
     return base64.b64encode(data).decode()
 
 # Função para definir o fundo da página com uma imagem
-def add_bg_image(image_path):
-    bin_str = get_base64(image_path)
-    bg_image = f"""
-    <style>
-    .stApp {{
+#def add_bg_image(image_path):
+ #   bin_str = get_base64(image_path)
+  #  bg_image = f"""
+   # <style>
+    #.stApp {{
        # background-image: url("data:image/png;base64,{bin_str}");
        # background-size: 500px 200px;
        # background-repeat: no-repeat;
