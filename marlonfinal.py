@@ -60,7 +60,7 @@ else:
    
 
     # Caminho da imagem de fundo
-    add_bg_image("C:/aula_python/2023-07-06.jpg")
+    add_bg_image("2023-07-06.jpg")
 
     # Conteúdo principal do aplicativo após login
     st.image('2023-07-06.jpg', caption=None, channels="RGB")
