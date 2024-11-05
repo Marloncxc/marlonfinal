@@ -29,7 +29,7 @@ def add_bg_image(image_path):
    # st.markdown(bg_image, unsafe_allow_html=True)
   
 # Caminho da imagem de fundo
-add_bg_image("2023-07-06.jpg")
+#add_bg_image("2023-07-06.jpg")
 
 st.image('2023-07-06.jpg', caption=None, channels="RGB")
 
