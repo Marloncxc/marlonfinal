@@ -182,7 +182,7 @@ else:
         plt.clf()
 
     # Convertendo a coluna Data para o tipo datetime para garantir a correta filtragem
-    movimentacao['Data'] = pd.to_datetime(movimentacao['Data'], format='%Y-%m-%d')
+    movimentacao['Data'] = pd.to_datetime(movimentacao['Data'], format='%d-%m-%Y', errors='coerce')
 
     # Relatório Diário
     st.sidebar.header('RELATÓRIO DIÁRIO')
